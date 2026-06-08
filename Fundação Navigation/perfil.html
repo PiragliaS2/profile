@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Perfil - Portfólio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .profile-card {
+            height: 420px;
+        }
+
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border: 4px solid #0d6efd;
+        }
+    </style>
+</head>
+
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="index.html">
+                DEV Gabriel Felix
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+
+                <ul class="navbar-nav me-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="perfil.html">Perfil</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfólio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container my-4 flex-grow-1">
+
+        <div class="row g-4">
+
+            <div class="col-12 col-lg-3">
+
+                <div class="card shadow">
+
+                    <div class="card-body text-center d-flex flex-column">
+
+                        <img src="img/foto_perfil.jpg" class="rounded-circle mx-auto mb-3"
+                            style="width: 160px; height: 160px; object-fit: cover; border: 4px solid #0d6efd;"
+                            alt="Perfil">
+
+                        <h4 class="fw-bold mb-1">
+                            Gabriel Henrique Piraglia Felix
+                        </h4>
+
+                        <p class="text-muted mb-2">
+                            Desenvolvedor Back-end
+                        </p>
+
+                        <p class="mb-4">
+                            Estudante de Desenvolvimento de Sistemas pelo SENAI.
+                        </p>
+
+                        <div class="mt-auto">
+                            <a href="portfolio.html" class="btn btn-primary w-100">
+                                Ver Portfólio
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-12 col-lg-9">
+
+                <div class="accordion shadow rounded" id="accordionPerfil">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingExperiencia">
+                            <button class="accordion-button fw-bold fs-5" type="button" data-bs-toggle="collapse" 
+                                data-bs-target="#collapseExperiencia" aria-expanded="true" aria-controls="collapseExperiencia">
+                                Experiência Profissional
+                            </button>
+                        </h2>
+                        <div id="collapseExperiencia" class="accordion-collapse collapse show" 
+                            aria-labelledby="headingExperiencia" data-bs-parent="#accordionPerfil">
+                            <div class="accordion-body">
+                                
+                                <h5 class="fw-bold text-dark">Desenvolvedor Back-end</h5>
+                                <p class="text-muted small">
+                                    SENAI • 2026 - Atual
+                                </p>
+                                <p class="mb-0">
+                                    Desenvolvimento de APIs REST, integração com banco de dados e manutenção de sistemas.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingHabilidades">
+                            <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" 
+                                data-bs-target="#collapseHabilidades" aria-expanded="false" aria-controls="collapseHabilities">
+                                Habilidades
+                            </button>
+                        </h2>
+                        <div id="collapseHabilidades" class="accordion-collapse collapse" 
+                            aria-labelledby="headingHabilidades" data-bs-parent="#accordionPerfil">
+                            <div class="accordion-body">
+                                
+                                <div class="row">
+                                    <div class="col-md-6 mb-3 mb-md-0">
+                                        <h6 class="fw-bold text-primary">Hard Skills</h6>
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Java</li>
+                                            <li class="list-group-item">Python</li>
+                                            <li class="list-group-item">Java Script</li>
+                                            <li class="list-group-item">My SQL</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="fw-bold text-success">Soft Skills</h6>
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Comunicação</li>
+                                            <li class="list-group-item">Trabalho em equipe</li>
+                                            <li class="list-group-item">Organização</li>
+                                            <li class="list-group-item">Escuta ativa</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFormacao">
+                            <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" 
+                                data-bs-target="#collapseFormacao" aria-expanded="false" aria-controls="collapseFormacao">
+                                Formação Acadêmica & Certificados
+                            </button>
+                        </h2>
+                        <div id="collapseFormacao" class="accordion-collapse collapse" 
+                            aria-labelledby="headingFormacao" data-bs-parent="#accordionPerfil">
+                            <div class="accordion-body">
+                                
+                                <div class="mb-3">
+                                    <p class="mb-1 fw-bold text-dark">
+                                        Técnico em Desenvolvimento de Sistemas
+                                    </p>
+                                    <p class="text-muted small mb-0">
+                                        SENAI • Em andamento
+                                    </p>
+                                </div>
+
+                                <hr class="text-muted">
+                            </div>
+                        </div>
+                    </div>
+
+                </div> </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center text-white-50">
+            © 2026 - Gabriel Henrique Pirglia Felix
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
